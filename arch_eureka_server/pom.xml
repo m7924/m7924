@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>arch</artifactId>
+        <groupId>com.suyao</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.suyao</groupId>
+    <artifactId>arch_eureka_server</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>arch_eureka_server</name>
+    <description>Demo project for Spring Boot</description>
+    <packaging>war</packaging>
+
+
+    <dependencies>
+        <!-- module -->
+        <dependency>
+            <groupId>com.suyao</groupId>
+            <artifactId>arch_common</artifactId>
+        </dependency>
+
+
+        <!-- eureka 注册中心-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <version>2.2.10.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+    </dependencies>
+</project>

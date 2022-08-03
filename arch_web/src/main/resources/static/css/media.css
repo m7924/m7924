@@ -1,0 +1,925 @@
+@media screen and (max-width: 1740px){
+.detailContent .selectBtn .left{
+	width: calc(100% - 180px);
+}
+
+.detailContent .selectBtn .s1{
+	width: 80px;
+}
+.selectMadel,
+.detailContent .selectBtn .words{
+	width: calc(100% - 80px);
+}
+.login .mainContent .aniContent{
+	left: -1%;
+	-webkit-transform: scale(.87,.87) translate(0%, -50%);
+	-o-transform:  scale(.87,.87) translate(0%, -50%);
+	-moz-transform:  scale(.87,.87) translate(0%, -50%);
+	-ms-transform:  scale(.87,.87) translate(0%, -50%);
+	transform:  scale(.87,.87) translate(0%, -50%);
+	left: 2%;
+	top: 50%;
+}
+
+.tableModel .tableWrap table{
+	width: 1350px;
+}
+.tableModel .tableWrap{
+	overflow: auto;
+}
+
+}
+
+
+@media screen and (max-width: 1660px){
+.indexContent .section3 .model .sjMain2 .dec,
+.indexContent .section3 .model .jkMain .ri .tit2{
+	font-size: 16px;
+}
+.indexContent{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.indexContent .section3 .model .sjMain2 .ri .title{
+	font-size: 14px;
+}
+}
+
+
+
+@media screen and (max-width: 1440px){
+.indexContent .section3_1 .list{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.indexContent .section1 .right .tl{
+	font-size: 16px;
+}
+.indexContent .section1 .right .val{
+	font-size: 16px;
+}
+
+.indexContent .section3 .model .sjMain3 .dec{
+	font-size: 15px;
+}
+.indexContent .section1 .right .val p:nth-child(2){
+	font-size: 14px;
+}
+
+.indexContent .section2_1 .center,
+.indexContent .section2_1 .right,
+.indexContent .section2_1 .left,
+.indexContent .section3 .model,
+.indexContent .section1 .left{
+	width: 100%;
+	float: none !important;
+	margin-bottom: 30px;
+}
+
+.indexContent .section2_1 .center,
+.indexContent .section2_1 .right,
+.indexContent .section2_1 .left{margin-right: 0;margin-left: 0;}
+.indexContent .section1 .right{
+	float: none;
+	width: 100%;
+	    border: 8px solid #EDF0F9;
+	    padding: 20px 20px
+}
+.indexContent .section2 a{
+	width: 25%;
+}
+.chooseContent .selectMadel{
+	width: 120px;
+}
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+.topMenu .logo{
+	padding-left: 20px;
+}
+.topMenu .cn{
+	font-size: 17px;
+}
+.echartsBlocks .block1 .total{
+	width: 100%;
+	height: 200px;
+}
+.echartsBlocks .block1 {
+	height: auto;
+}
+.echartsBlocks .block1 .list{
+	height: auto;
+	width: 100%;
+	float: none;
+	zoom: 1;
+	overflow: hidden;
+	margin: 0;
+}
+
+.login .mainContent .aniContent{
+
+	-webkit-transform: scale(.57,.57) translate(0%, -50%);
+	-o-transform:  scale(.57,.57) translate(0%, -50%);
+	-moz-transform:  scale(.57,.57) translate(0%, -50%);
+	-ms-transform:  scale(.57,.57) translate(0%, -50%);
+	transform:  scale(.57,.57) translate(0%, -50%);
+	top:40%;
+	left:-10%;
+}
+
+}
+@media screen and (max-width: 1000px){
+	.topMenu .infor .h2tit{
+		padding-right: 20px;
+	}
+	.topMenu .right{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+	}
+	.topInfor{
+		font-size: 12px;
+	}
+.alertModel2 {
+	left: 180px
+}
+
+.leftMenu{
+	width: 180px;
+}
+.leftMenu dl{
+	padding-left: 0;
+}
+.rightContent{
+	width: calc(100% - 180px);
+}
+.addPiont .item{
+	width: 100%;
+	height: auto;
+	padding-bottom: 30px;
+}
+.addPiont .center{
+	height: 50px;
+	width: 100px;
+	zoom: 1;
+	overflow: hidden;
+	text-align: center;
+	justify-content: space-evenly;
+	flex-direction: row-reverse;
+	width: 100%;
+}
+.addPiont .center a{
+	display: inline-block;
+	margin: 7px auto;
+}
+.addPiont .center a.prev{
+margin-bottom:0px;
+}
+.addPiont .item .tablecontent .none{
+	line-height: 200px;
+}
+}
+@media screen and (max-width: 768px){
+	
+.pc{
+    display: none;
+}
+.wap{
+    display: block;
+}
+.topMenu .infor{
+position:absolute;
+right:50px;
+top:10px;}
+
+.alertModel2 {
+	left: 0px;
+	top: 150px;
+}
+.topMenu .infor .h2tit{
+padding-right:20px;
+background-size:12px;}
+.topMenu .infor .h2tit span{
+font-size:15px;
+}
+
+
+.topMenu .right{
+	right:-100%;
+	position: static;
+}
+.topMenu .switch{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 40px;
+	height: 40px;
+	background: url(../images/switch.png) no-repeat center center #fff;
+	background-size: 50%;
+	z-index: 7;
+	border-radius: 0px 0px 0px 10px;
+	box-shadow: 0px 0px 10px #000;
+}
+.main .leftSwitch{
+	position:absolute;
+	top: 50%;
+	left: 0;
+	-o-transform: translate(0%, -50%);
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+	background: url(../images/switch.png) no-repeat center center #fff;
+	background-size: 50%;
+	z-index: 7;
+	border-radius: 0px 5px 5px 0px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+	width: 20px;
+	height: 40px;
+}
+.topMenu .cn{
+	display: none
+}
+.topMenu .logo{
+	padding: 20px 10px;
+}
+.topMenu .title img{
+	height: 30px;
+}
+.topMenu .link{
+	position: absolute;
+	width: 100%;
+	background: #fff;
+	top: 0px;
+	left: 0;
+	line-height: 70px;
+	height: 70px;
+	padding: 0px;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	padding-right: 40px;
+	left: 100%;
+}
+.topMenu .link a{
+	
+margin: 0px;
+	
+float: left;
+	
+font-size: 13px;
+}
+.topMenu .link.current{
+	left: 0px;
+}
+.topInfor{
+	top: 70px;
+}
+.main{
+	top: 106px;
+}
+.topInfor .right{
+	display: none
+}
+.topInfor .left{
+	float: none;
+	padding: 0px;
+	text-align: center;
+}
+
+.leftMenu{
+	position: absolute;
+	left: 0px;
+	top: 00px;
+	z-index: 555;
+	background: #fff;
+	left: -180px;
+}
+.leftMenu .h2tit a{
+	
+padding-left: 30px;
+	
+font-size: 12px;
+	
+background-position: 10px center !important;
+	
+background-size: 10px !important;
+	
+line-height: 30px;
+}
+.leftMenu dl dd{
+	padding-bottom: 15px;
+}
+.leftMenu dl dd a{
+	font-size: 12px;
+	padding-left: 22px;
+	background-position: 6px center;
+	background-size: 9px;
+}
+.leftMenu dl{/* padding-top:5px; *//* padding-bottom:5px; */}
+
+.rightContent{
+	width:100%;
+}
+
+.leftSwitch.current{
+	left: 180px
+}
+.leftMenu.current{
+	left: 0;
+}
+.rightContent.current{
+	-o-transform: translate(180px, 0%);
+-webkit-transform: translate(180px, 0%);
+-moz-transform: translate(180px, 0%);
+-ms-transform: translate(180px, 0%);
+transform: translate(180px, 0%);
+}
+
+.controlsBtn{
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+.controlsBtn ul{
+    display: flex;
+    align-items: center;
+}
+.controlsBtn li .h2tit a{
+    font-size: 12px;
+    font-weight: 400;
+    word-break: keep-all;
+    cursor: pointer;
+}
+
+
+
+.controlsBtn li:hover dl{
+	
+}
+.videoList{
+	width: 100%;
+	height: 70%;
+}
+.detailContent{
+	overflow: auto;
+}
+.videoList .slide{
+	padding: 10px;
+	width: 100vw;
+	padding: 10px 10px;
+	justify-content: space-around;
+}
+.videoInforControls{
+	width: 100%;
+	float: none;
+	height: auto;
+}
+.controlsBtn li dl{
+	display:none;
+}
+.controlsBtn li .h2tit i.wap{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	z-index: 7777;
+}
+.detailContent .leftList{
+	float: none;
+	height: 87vw;
+	width: 100%;
+	zoom: 1;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+.detailContent .leftList .list a{
+	float: left;
+	width: 50%;
+}
+.detailContent .rightList{
+	width: 100%;
+	float: none;
+}
+.detailContent .selectBtn .left{
+	float: none;
+	width: 100%;
+}
+.detailContent .selectBtn .left:after{
+	display: table;
+	clear: both;
+	content: "";
+}
+.detailContent .rightList .border{
+	margin: 10px;
+	border-top: 1px solid #000;
+}
+.detailContent .selectBtn .item{
+	width: 100%;
+	margin-right: 0px;
+}
+.detailContent .selectBtn .right{
+	float: none;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.detailContent .selectBtn .right button{
+	float: none;
+}
+.detailContent .rightList .selectBtn2 a{
+	margin-right: 10px;
+	padding-left: 20px;
+	background-size: 12px auto !important;
+	line-height: 30px;
+}
+.detailContent .rightList .selectBtn2{
+	line-height: 1;
+}
+.tableModel .totalNum .left select{
+	width: 80px;
+}
+.tableModel .totalNum .right input{
+	width: 40px;
+}
+.tableModel .totalNum .right button{
+	width: 60px;
+}
+.detailContent .rightList .selectBtn2 .include{
+	line-height: 30px;
+}
+.minheight{
+	min-height: 30px;
+}
+.addPiont{
+	padding: 10px;
+}
+.warning{
+	line-height: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	background-position: 9px 12px;
+}
+.detailContent .formTable .bottomBtn{
+	padding-top: 30px;
+}
+.echartsBlocks .block1 .val{
+	font-size: 30px;
+}
+.echartsBlocks .block1 .title{
+	font-size: 14px;
+}
+.echartsBlocks .block1 .total{
+	height: 120px;
+}
+.echartsBlocks .block1 .list li{
+	width: 100%;
+}
+.echartsBlocks .block2 .item{
+	width: 100%;
+}
+.echartsBlocks .block2{
+	height: auto;
+}
+.echartsBlocks .block2 .list li{
+	width: 100%;
+	float: none;
+}
+.login .mainContent .aniContent{
+	display: none;
+}
+.login .mainContent .content{
+	width: 90%;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-o-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	right: auto;
+}
+.login .topText{
+	padding:10px 0px;
+}
+.login .topText .text2,
+.login .topText .text1{
+	margin: auto;
+	height: 15px;
+	padding: 0;
+	margin: 10px auto;
+}
+.login .copy{
+
+font-size:15px;
+
+padding:10px;
+
+height: auto;
+
+line-height: 1;
+}
+.login .mainContent{min-height: calc(100vh - 115px);}
+.login .mainContent .border{
+padding:20px 10px;}
+.login .mainContent .title{
+text-align:center;
+font-size:20px;
+margin-bottom:20px;
+}
+.login .mainContent .words{
+height:40px;
+font-size:14px;
+padding:0px 10px;
+margin-bottom:10px;
+}
+.login .mainContent .send{
+height:40px;
+font-size:14px;
+margin-top:20px;
+}
+.login .checkboxIm input[type=checkbox]+label span{
+	font-size:14px;
+	padding-left:20px;
+}
+
+
+
+.indexContent{
+	padding: 20px 15px;
+}
+.indexContent .section1 .left .item .title,
+.indexContent .section1 .left .title{
+	font-size: 16px;
+}
+.indexContent .section1 .left .items{
+	padding-top: 20px;
+}
+.indexContent .section1 .left .val{
+width: 20vw;
+line-height: 20vw;
+}
+.indexContent .section1 .left .title2{
+	font-size: 14px;
+}
+.indexContent .section1 .right .weather img{
+	width: 50px;
+}
+.indexContent .section1 .right .val{
+	padding-top: 10px;
+}
+.indexContent .section1 .right .val p:nth-child(2){
+	padding-top: 5px;
+}
+.indexContent .section1 .right .date{
+	font-size: 15px;
+	padding-top: 10px;
+}
+.indexContent .section1 .right .news{
+	margin-top: 15px;
+}
+.indexContent .section1 .right .list .swiper-container,
+.indexContent .section1 .right .list .swiper-container-vertical>.swiper-wrapper,
+.indexContent .section1 .right .list .swiper-container-vertical>.swiper-wrapper *,
+.indexContent .section1 .right .type,
+.indexContent .section1 .right .news{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.indexContent .section1 .right .tit{
+	font-size: 15px;
+	padding: 15px 0px;
+}
+.indexContent .section1 .right .val2{
+	line-height: 40px;
+	font-size: 23px;
+	height: 40px;
+}
+.indexContent .section2 a{
+	width: 33.333%;
+}
+.indexContent .section2 a .icon{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.indexContent .section2 a .title{
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+.indexContent .section3 .model .titleImg{
+	padding: 0px 15px;
+}
+.indexContent .section3 .model .titleImg .tit{
+	margin-left: 5px;
+	font-size: 16px;
+	line-height: 20px;
+}
+.indexContent .section3 .model .titleImg .ri{
+	line-height: 20px;
+	font-size: 16px;
+}
+.indexContent .section3 .model .titleImg .lef img{
+	height: 20px;
+}
+.indexContent .section3 .model .jkMain{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 0;
+}
+.indexContent .section3 .model{
+	height: auto;
+	padding-bottom: 20px;
+}
+.indexContent .section3 .model .jkMain .le{
+	width: 100%;
+	float: none
+}
+.indexContent .section3 .model .sjMain2 .ri .title,
+.indexContent .section3 .model .jkMain .tit{
+	line-height: 30px;
+	font-size: 14px;
+}
+.indexContent .section3 .model .jkMain .ri{
+	float: none;
+	width: 100%;
+}
+.indexContent .section1 .left .val2{
+	line-height: 30px;
+	font-size: 14px;
+}
+.indexContent .section3 .model .sjMain2 .ri .val,
+.indexContent .section3 .model .jkMain .ri .val2,
+.indexContent .section3 .model .jkMain .le .val{
+	line-height: 50px;
+	font-size: 30px;
+}
+.indexContent .section3 .model .sjMain2{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.indexContent .section3 .model .sjMain2 .le{
+	width: 100%;
+	float: none;
+	margin-bottom: 20px;
+}
+.indexContent .section3 .model .sjMain2 .ri{
+	width: 100%;
+	float: none;
+}
+.indexContent .section3 .model .sjMain2 .dec{
+	padding: 10px 0
+}
+.indexContent .section3 .model .sjMain2 .dec{
+	display: block;
+	font-size: 14px;
+	line-height: 1.5;
+}
+.indexContent .section3 .model .sjMain3{
+	padding: 20px 15px;
+}
+.indexContent .section3 .model .sjMain3 .item{
+	width: 100%;
+	float: none;
+	margin-bottom: 15px;
+}
+.indexContent .section3 .model .sjMain3 .content li .s1{
+	font-size: 16px;
+}
+.indexContent .section3 .model .sjMain3 .text{
+	font-size: 14px;
+	padding-left: 100px;
+}
+.indexContent .section3 .model .sjMain3 .dec{
+	font-size: 14px;
+}
+.indexContent .section3 .model .sjMain4 .types{
+	float: none;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.indexContent .section3 .model .sjMain4 .types span{
+	font-size: 15px;
+	padding-left: 22px;
+	margin-bottom: 0px;
+}
+.indexContent .section3 .model .sjMain4 .types span:after{
+	width: 10px;
+	height: 10px;
+	top: 8px;
+}
+.indexContent .section3 .model .sjMain4 .charts3{
+	width: 100%;
+	float: none;
+	height: 120px;
+}
+.indexContent .section3 .model .sjMain5{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.indexContent .section3 .model .sjMain5 .le{
+	width: 100%;
+	float: none;
+}
+.indexContent .section3 .model .sjMain5 .ri{
+	width: 100%;
+}
+.indexContent .section3 .model .sjMain5 .ri .tit,.indexContent .section3 .model .sjMain6 .ri .tit{
+	line-height: 30px;
+	font-size: 14px;
+}
+.indexContent .section3 .model .sjMain5 .ri .val,.indexContent .section3 .model .sjMain6 .ri .val{
+	    line-height: 50px;
+    font-size: 30px;
+}
+.indexContent .section3 .model .sjMain6{
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.indexContent .section3 .model .sjMain6 .le,
+.indexContent .section3 .model .sjMain6 .ri{
+	float: none;
+	width: 100%;
+	margin-bottom: 20px;
+	zoom: 1;
+	overflow: hidden;
+}
+.chooseContent .left{
+	float: none;
+}
+.chooseContent .left .all{
+	width: 100%;
+}
+.chooseContent .left:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.chooseContent .selectMadel:nth-child(2n){
+	margin-right: 0;
+}
+.chooseContent .selectMadel{
+	width: 100%;
+	margin-bottom: 10px;
+	margin-right: 0;
+}
+.chooseContent .left button{
+	width: 100%;
+}
+.chooseContent .right{
+	float: none;
+	padding-top: 20px;
+}
+.chooseContent{
+	padding: 15px;
+}
+.chooseContent2{
+	padding: 15px 0px;
+}
+.chooseContent2 a{
+	margin-right: 20px;
+	padding-left: 20px;
+}
+.pagesize2{
+	padding-top: 30px;
+}
+
+.chooseContent .line{
+	height: 0;
+}
+.alertModel2 .content{
+	padding: 15px;
+	max-height: 54vh;
+	overflow: auto;
+}
+.alertModel2 .selects .s1{
+	width: 100px;
+	padding-right: 10px;
+}
+.alertModel2 .selects .selectMadel{
+	width: calc(100% - 100px);
+}
+
+.alertModel2 .type2 .selects .model{
+	width: 100%;
+	margin-bottom: 5px;
+}
+.alertModel2 .btnGroups{
+	text-align:center;
+	zoom: 1;
+	overflow: hidden;
+}
+.alertModel2 .btnGroups button{
+	font-size:12px;
+	height:30px;
+	width: 48%;
+	margin: 1%;
+	float: left;
+}
+.alertModel2 .selects .dz{
+	width: calc(100% - 100px);
+}
+.alertModel2 .content .items .s1{
+	width: 100%;
+	text-align: left;
+}
+.alertModel2 .content .items .s2{
+	width: 100%;
+}
+.alertModel2 .content .items .leftchoose{
+	width:100%;
+	float:none
+}
+.alertModel2 .content .items .riBtn{
+	width:100%;
+	padding-top:10px;
+	float:none;
+}
+.alertModel2 .content .items .chooseItems .chooseItem{
+	width:calc((100% - 30px)/2)
+}
+.alertModel2 .content .items .chooseItems .btns a{
+	width:20px;
+	height:20px;
+	background-size: 40% !important;
+}
+.alertModel2 .content .items .chooseItems .btns{
+	width:30px;
+}
+#showui li{
+	width: 60px;
+	height: 60px;
+}
+.upimg{
+	width: 60px;
+	height: 60px;
+}
+.indexContent .section3 .model .charts1{
+	width: 100%;
+	float: none;
+}
+.indexContent .section3 .model .jkMain{
+	float: none;
+	width: 100%;
+}
+.indexContent .section3 .model .sjMain3 .item{
+	float: none !important;
+	width: 100% !important;
+}
+.indexContent .section3 .model .sjMain3 .text{
+	padding-left: 80px;
+	padding-bottom: 20px;
+	justify-content: space-between;
+}
+.indexContent .section1 .left .model{
+	float: none;
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+.indexContent .section1 .right.type2 .item{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.indexContent .titleImg .ri select{
+	width: 100%;
+}
+.indexContent .titleImg .ri {
+	float: none;
+	width: 100%;
+}
+.indexContent .titleImg .lef .tit{
+	margin-left: 10px;
+	font-size: 14px;
+	padding-top: 9px;
+}
+.indexContent .section4_1 .leftCharts,
+.indexContent .section4_1 .rightTable{
+	float: none;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.indexContent .section4_1 .rightTable{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.indexContent .section2_1 .center .list1 .total{
+	width: 100%;
+}
+.indexContent .section2_1 .center .list1 .ri{
+	width: 100%;
+}
+.indexContent .section4_1 .leftCo,
+.indexContent .section4_1 .rightCo{
+	width: 100%;
+	float: none;
+}
+}
