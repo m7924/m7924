@@ -47,13 +47,13 @@
             <version>1.1.3</version>
         </dependency>
 
-        <!-- eureka netflix-eureka-client中已经集成了ribbon(负载均衡) -->
+        <!-- eureka(注册中心) netflix-eureka-client中已经集成了ribbon(负载均衡) -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
-        <!-- feign 简化接口的调用方式 Feign本身也集成Hystrix熔断器-->
+        <!-- feign（简化接口的调用方式）； Feign本身也集成Hystrix(熔断器)-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
