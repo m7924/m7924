@@ -1,4 +1,4 @@
-package com.suyao.arch_server.service3h.vo;
+package com.suyao.arch_web.vo;
 
 /**
  * @Classname InitVedioIndex

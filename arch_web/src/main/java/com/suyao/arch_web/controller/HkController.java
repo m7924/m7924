@@ -1,8 +1,9 @@
 package com.suyao.arch_web.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.suyao.arch_web.hk.vo.InitVedio;
-import com.suyao.arch_web.hk.vo.InitVedioIndex;
+
+import com.suyao.arch_web.vo.InitVedio;
+import com.suyao.arch_web.vo.InitVedioIndex;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
