@@ -5,6 +5,8 @@ import com.suyao.arch_server.manager.UserManager;
 import com.suyao.arch_server.mysql.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import java.util.List;
 
 /**
@@ -22,14 +24,17 @@ public class UserManagerImpl implements UserManager {
         return userMapper.getUserById(id);
     }
 
+    @Transactional
     public int insert(User user){
         return userMapper.insert(user);
     }
 
+    @Transactional
     public int update(User user){
         return userMapper.update(user);
     }
 
+    @Transactional
     public int delete(String id){
         return userMapper.delete(id);
     }
