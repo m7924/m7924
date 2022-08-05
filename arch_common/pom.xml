@@ -52,5 +52,32 @@
             <scope>import</scope>
         </dependency>
     </dependencies>
-
+     <build>
+         <plugins>
+             <!-- 编译插件，指定JDK版本 -->
+             <plugin>
+                 <groupId>org.apache.maven.plugins</groupId>
+                 <artifactId>maven-compiler-plugin</artifactId>
+                 <configuration>
+                     <source>${java.version}</source>
+                     <target>${java.version}</target>
+                 </configuration>
+             </plugin>
+             <plugin>
+                 <groupId>org.springframework.boot</groupId>
+                 <artifactId>spring-boot-maven-plugin</artifactId>
+                 <configuration>
+                     <!--多个子module项目依赖conmon包-->
+                     <classifier>exec</classifier>
+                 </configuration>
+                 <executions>
+                     <execution>
+                         <goals>
+                             <goal>repackage</goal>
+                         </goals>
+                     </execution>
+                 </executions>
+             </plugin>
+         </plugins>
+     </build>
 </project>
