@@ -1,14 +1,14 @@
-package com.robod.service.impl;
+package com.suyao.arch_web.security.service;
 
-import com.robod.entity.SysUser;
-import com.robod.mapper.UserMapper;
-import com.robod.service.intf.UserService;
+
+import com.alibaba.fastjson.JSONObject;
+
+import com.suyao.arch_common.entity.sys.SysUser;
+import com.suyao.arch_web.Api.feign.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
-import java.util.Base64;
 
 /**
  * @author Robod
@@ -18,16 +18,15 @@ import java.util.Base64;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserMapper userMapper;
+    private IUserService iUserService;
 
-    /*public UserServiceImpl(UserMapper userMapper) {
-        this.userMapper = userMapper;
-    }*/
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        SysUser sysUser = userMapper.findByUsername(username);
-        return sysUser;
+        SysUser sysUser = iUserService.findByUsername(username);
+        String json = JSONObject.toJSONString(sysUser);
+        return JSONObject.parseObject(json, com.suyao.arch_web.security.vo.SysUser.class);
+        //return sysUser;
     }
 
 

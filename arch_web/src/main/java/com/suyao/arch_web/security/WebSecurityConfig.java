@@ -1,7 +1,8 @@
-package com.robod.config;
+package com.suyao.arch_web.security;
 
-import com.robod.filter.JwtLoginFilter;
-import com.robod.service.intf.UserService;
+
+import com.suyao.arch_web.security.filter.JwtLoginFilter;
+import com.suyao.arch_web.security.service.UserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

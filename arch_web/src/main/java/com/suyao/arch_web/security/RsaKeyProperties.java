@@ -1,12 +1,10 @@
-package com.robod.config;
+package com.suyao.arch_web.security;
 
-import com.robod.utils.RsaUtils;
+import com.suyao.arch_web.security.utils.RsaUtils;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import javax.annotation.PostConstruct;
-import java.io.File;
-import java.net.URL;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 
