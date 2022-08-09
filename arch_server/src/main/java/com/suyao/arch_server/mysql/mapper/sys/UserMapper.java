@@ -20,7 +20,7 @@ public interface UserMapper{
     @Results({
             @Result(id = true, property = "id", column = "id"),
             @Result(property = "roles", column = "id", javaType = List.class,
-                    many = @Many(select = "com.robod.mapper.RoleMapper.findByUid"))
+                    many = @Many(select = "com.suyao.arch_server.mysql.mapper.sys.RoleMapper.findByUid"))
     })
     public SysUser findByUsername(String username);
 }

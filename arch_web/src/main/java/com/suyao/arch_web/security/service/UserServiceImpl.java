@@ -26,7 +26,6 @@ public class UserServiceImpl implements UserService {
         SysUser sysUser = iUserService.findByUsername(username);
         String json = JSONObject.toJSONString(sysUser);
         return JSONObject.parseObject(json, com.suyao.arch_web.security.vo.SysUser.class);
-        //return sysUser;
     }
 
 

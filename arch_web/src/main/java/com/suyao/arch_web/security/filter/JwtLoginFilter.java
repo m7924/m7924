@@ -17,7 +17,9 @@ import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.List;
@@ -49,11 +51,12 @@ public class JwtLoginFilter extends UsernamePasswordAuthenticationFilter {
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
         try {
-            SysUser user = JSONObject.parseObject(request.getInputStream(), SysUser.class);
+            String body = new RequestWrapper(request).getBody();
+            SysUser user = JSONObject.parseObject(body, SysUser.class);
             return authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(
-                           user.getUsername(),
-                           user.getPassword())
+                            user.getUsername(),
+                            user.getPassword())
             );
         } catch (Exception e) {
             try {

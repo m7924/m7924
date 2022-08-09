@@ -1,0 +1,25 @@
+<p>
+    <label>Username</label> <input id="username">
+</p>
+<p>
+    <label>Password</label> <input id="password">
+</p>
+<button onclick="login()">Sign in</button>
+
+<script type="text/javascript" src="/js/hk/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    function login(){
+        var data = {"username": $("#username").val(),
+                    "password": $("#password").val()};
+
+        $.ajax({
+            url : "/login" ,
+            type : 'post',
+            headers: {'Content-Type':'application/json'},
+            data : JSON.stringify(data),
+            success : function(data) {
+                alert(data);
+            }
+        });
+    }
+</script>
