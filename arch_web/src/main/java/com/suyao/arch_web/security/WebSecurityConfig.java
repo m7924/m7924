@@ -7,6 +7,7 @@ import com.suyao.arch_web.security.service.UserService;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.annotation.Bean;
 
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -54,6 +55,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(userService).passwordEncoder(passwordEncoder());
     }
 
+
+
     /**
      * 配置SpringSecurity相关信息
      *
@@ -63,17 +66,21 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http
+                .headers()
+                    .frameOptions().disable()//配置允许嵌入iframe
+                    .and()
                 .csrf()
                     .disable()  //关闭csrf (跨站请求伪造)
                 .authorizeRequests()//配置权限
-                    .antMatchers("/js/**","/css/**","/fonts/**","/images/**","/copyrigth_img.png").permitAll()
-                    .antMatchers("/**").hasAnyRole("USER") //角色信息
+                    .antMatchers(HttpMethod.GET,"/**/*.html", "/js/**","/css/**","/fonts/**","/images/**","/copyrigth_img.png").permitAll()//放行 不去做验证是否可以访问（UsernamePasswordAuthenticationToken），但还是会经过过滤器
+                    .antMatchers("/initPlugin", "/cityVedio2").permitAll()
+                    .antMatchers("/**").hasAnyRole("USER") //设置统一的 URL 的权限校验，只判断是否为登陆用户。另外，#hasAnyRole(...) 方法，会自动添加 "ROLE_" 前缀，所以此处的传参是 "user"
                     .anyRequest().authenticated()    //表示其它资源需要认证通过后才可访问
                     .and()
                 .formLogin()//开启formLogin默认配置
                     .loginPage("/login/auth").permitAll()//请求时未登录跳转接口（permitAll允许任何人请求，包含未登录用户）
-                        .failureUrl("/login/fail")//用户密码错误跳转接口
-                    .defaultSuccessUrl("/login.success", true)//登录成功跳转接口（true：是指登录成功后，始终跳转到登录成功url。它默认为false）
+                    .failureUrl("/login/fail")//用户密码错误跳转接口
+                    .defaultSuccessUrl("/login/success", true)//登录成功跳转接口（true：是指登录成功后，始终跳转到登录成功url。它默认为false）
                     .loginProcessingUrl("/login")//post登录接口，登录验证由系统实现
                     .usernameParameter("username")//要认证的用户参数名，默认username
                     .passwordParameter("password")//要认证的密码参数名，默认password

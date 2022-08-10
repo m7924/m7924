@@ -78,10 +78,10 @@
         </dependency>
 
         <!-- feign（简化接口的调用方式）； Feign本身也集成Hystrix(熔断器)-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
+        </dependency>-->
         <!--IM -->
         <dependency>
             <groupId>io.netty</groupId>

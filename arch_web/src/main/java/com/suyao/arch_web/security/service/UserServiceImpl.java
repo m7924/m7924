@@ -3,8 +3,8 @@ package com.suyao.arch_web.security.service;
 
 import com.alibaba.fastjson.JSONObject;
 
+import com.suyao.arch_common.api.IUserService;
 import com.suyao.arch_common.entity.sys.SysUser;
-import com.suyao.arch_web.Api.feign.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

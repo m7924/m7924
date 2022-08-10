@@ -1,6 +1,7 @@
 package com.suyao.arch_web.controller;
 
-import com.suyao.arch_web.Api.feign.IHkService;
+
+import com.suyao.arch_common.api.IHkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,7 +30,7 @@ public class RemoteCallerController {
     }
 
 
-    @Autowired
+    @Autowired(required = false)
     private IHkService iHkService;
 
     @GetMapping("/cityVedio2")

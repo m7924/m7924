@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.config.EnableMongoAuditing;
 
 @EnableConfigurationProperties(RsaKeyProperties.class)  //将配置类放入Spring容器中
 @EnableMongoAuditing
-@EnableFeignClients
+@EnableFeignClients(basePackages = "com.suyao.arch_common.api")
 @EnableEurekaClient
 @SpringBootApplication
 public class ArchWebApplication {

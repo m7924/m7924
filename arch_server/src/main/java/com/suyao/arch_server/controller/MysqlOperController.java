@@ -1,5 +1,6 @@
 package com.suyao.arch_server.controller;
 
+import com.suyao.arch_common.api.IMysqlService;
 import com.suyao.arch_common.entity.User;
 import com.suyao.arch_server.manager.UserManager;
 import lombok.extern.slf4j.Slf4j;
@@ -26,12 +27,13 @@ import java.util.UUID;
  */
 @Slf4j
 @RestController
-public class MysqlOperController {
+public class MysqlOperController implements IMysqlService {
 
     @Autowired
     private UserManager userService;
 
-    @RequestMapping(value = "/addUser")
+    //@RequestMapping(value = "/addUser")
+    @Override
     public int addUser(@RequestParam("username") String username){
         User user = new User();
         //String id = UUID.randomUUID().toString().replace("-", "");
@@ -47,7 +49,8 @@ public class MysqlOperController {
         return result;
     }
 
-    @RequestMapping(value = "/allUser")
+    //@RequestMapping(value = "/allUser")
+    @Override
     public List<User> getAllUsers(){
         List<User> users = userService.getAllUsers();
         return users;

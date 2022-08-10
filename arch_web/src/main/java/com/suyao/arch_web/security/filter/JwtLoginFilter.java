@@ -2,7 +2,6 @@ package com.suyao.arch_web.security.filter;
 
 import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import com.suyao.arch_web.security.RsaKeyProperties;
 import com.suyao.arch_web.security.utils.JwtUtils;
 import com.suyao.arch_web.security.vo.SysRole;
@@ -12,20 +11,18 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 /**
+ * JWT java web token 令牌生成算法
  * SpringSecurity登录原理  https://www.jianshu.com/p/a65f883de0c1
  * @author Robod
  * @date 2020/8/10 7:54

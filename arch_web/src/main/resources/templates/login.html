@@ -17,8 +17,18 @@
             type : 'post',
             headers: {'Content-Type':'application/json'},
             data : JSON.stringify(data),
+            complete:function(xhr,data){
+                /*alert("yyyy-------"+JSON.stringify(data))
+                alert(xhr.getResponseHeader('Authorization'));
+                var req = new XMLHttpRequest();
+                req.open('GET', '/provinceVedio', true);
+                req.setRequestHeader("Authorization", xhr.getResponseHeader('Authorization'));
+                req.send();*/
+                window.location.href='/provinceVedio?token='+xhr.getResponseHeader('Authorization');
+            },
             success : function(data) {
-                alert(data);
+
+
             }
         });
     }

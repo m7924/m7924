@@ -28,6 +28,7 @@
         </dependency>
 
 
+
         <!--海康 OpenAPI安全认证库 -->
         <dependency>
             <groupId>com.hikvision.ga</groupId>

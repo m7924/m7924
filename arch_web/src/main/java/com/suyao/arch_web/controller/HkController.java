@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.suyao.arch_web.vo.InitVedio;
 import com.suyao.arch_web.vo.InitVedioIndex;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -71,6 +72,7 @@ public class HkController {
         view.addObject("vedioParam", JSONObject.toJSONString(map));
         return view;
     }
+
 
     @GetMapping("/provinceVedio")
     public String provinceVedio(Model model)throws Exception{

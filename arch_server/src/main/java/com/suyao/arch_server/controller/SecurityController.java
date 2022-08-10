@@ -1,5 +1,6 @@
 package com.suyao.arch_server.controller;
 
+import com.suyao.arch_common.api.IUserService;
 import com.suyao.arch_common.entity.sys.SysUser;
 import com.suyao.arch_server.mysql.mapper.sys.UserMapper;
 import lombok.extern.slf4j.Slf4j;
@@ -16,12 +17,13 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Slf4j
 @RestController
-public class SecurityController {
+public class SecurityController implements IUserService {
 
     @Autowired
     private UserMapper userMapper;
 
-    @RequestMapping(value = "/findByUsername")
+    //@RequestMapping(value = "/findByUsername")
+    @Override
     public SysUser findByUsername(@RequestParam("username") String username) {
         SysUser sysUser = userMapper.findByUsername(username);
         return sysUser;
